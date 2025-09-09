@@ -16,6 +16,6 @@ function calculateLeague() {
     if ( handicap < 13 ) {
     // TODO: Display the appropriate message in the result paragraph
          result = "You are a league 1 player" 
-     } else { result = "Your league is league 2"}
+     } else { result = "You are a league 2 player"}
      document.getElementById('result').textContent = result;
 }
