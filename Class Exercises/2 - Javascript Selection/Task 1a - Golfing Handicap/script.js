@@ -18,4 +18,7 @@ function calculateLeague() {
          result = "You are a league 1 player" 
      } else { result = "You are a league 2 player"}
      document.getElementById('result').textContent = result;
+     if (isNaN(handicap)) { 
+        document.getElementById('result').textContent = `Please enter valid numbers`
+     }
 }
