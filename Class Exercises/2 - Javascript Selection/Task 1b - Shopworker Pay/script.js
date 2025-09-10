@@ -21,7 +21,9 @@ let result = parseFloat(document.getElementById('result').value);
     // TODO: Calculate total pay
     
     // TODO: Display the hours worked and total amount earned
-    document.getElementById('result').textContent = `Hours Worked: ${hours}, Wage: £${result}`
+    document.getElementById('result').textContent = `Hours Worked: ${hours}, Wage: £${result}`;
+    document.getElementById('hours').textContent = hours.toFixed(2);
+     document.getElementById('result').textContent = result.toFixed(2);
       if (isNaN(age) || isNaN(hours)) {
     document.getElementById('result').textContent = "Please enter valid numbers"};
 }
