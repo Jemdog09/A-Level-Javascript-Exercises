@@ -21,11 +21,28 @@ class Stack {
   // --- Push operation ---
   push(value) {
   // TODO: Write the push algorithm for the stack from scratch
+  if (this.size > this.LIMIT){
+    return -1
+  } else {
+    var newNode = new Node(value)
+    newNode.next = this.top
+    this.top = newNode
+    this.size ++
+    return this.size
+  }
   }
 
   // --- Pop operation ---
   pop() {
     // TODO: Write the pop algorithm for the stack from scratch
+    if (this.size === 0){
+      return -1
+    } else {
+      var popped = this.top.value
+      this.top = this.top.next
+      this.size --
+      return popped
+    }
   }
 
   // --- Peek operation ---

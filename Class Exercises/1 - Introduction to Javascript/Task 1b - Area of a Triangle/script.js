@@ -2,6 +2,13 @@
 document.getElementById('calculateBtn').addEventListener('click', calculateArea);
 
 function calculateArea() {
+let base = parseFloat(document.getElementById('base').value);
+let height = parseFloat(document.getElementById('height').value);
+let area = parseFloat(document.getElementById('area').value);
+
+area = base * height * 0.5
+
+document.getElementById('area').textContent = area
     // TODO:
     // 1. Get the base and height values from the input fields
     // 2. Calculate the area using the formula: area = (base * height) / 2

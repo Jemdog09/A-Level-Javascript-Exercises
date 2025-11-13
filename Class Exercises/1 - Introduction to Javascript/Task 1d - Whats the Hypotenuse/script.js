@@ -2,6 +2,12 @@
 document.getElementById('calculateBtn').addEventListener('click', calculateHypotenuse);
 
 function calculateHypotenuse() {
+    let sideA = parseFloat(document.getElementById('sideA').value);
+    let sideB = parseFloat(document.getElementById('sideB').value);
+    
+   let hypotenuse = Math.sqrt(sideA * sideA  + sideB * sideB)
+
+    document.getElementById('hypotenuse').textContent = hypotenuse.toFixed(2)
     // TODO:
     // 1. Get the lengths of sides A and B from the input fields
     // 2. Calculate the hypotenuse using the Pythagorean theorem: c = √(a² + b²)

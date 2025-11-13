@@ -22,7 +22,7 @@ class Stack {
   push(value) {
     // TODO: Fill in the blank to add value to the stack
     if (this.size < this.LIMIT) {
-      var newNode = new Node(___________);
+      var newNode = new Node(value);
       newNode.next = this.top;
       this.top = newNode;
       this.size = this.size + 1;
@@ -41,7 +41,7 @@ class Stack {
       return -1;
     } else {
       var popped = this.top.value;
-      this.top = ___________;
+      this.top = this.top.next;
       this.size = this.size - 1;
       return popped;
     }

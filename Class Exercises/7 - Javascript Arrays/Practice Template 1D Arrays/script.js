@@ -12,6 +12,7 @@ let overlay = document.getElementById('overlay');
 
 btnDisplayArray.addEventListener('click', displayArray);
 btnAddValue.addEventListener('click', displayModal);
+btnRemoveValue.addEventListener('click', RemoveValue)
 overlay.addEventListener('click', hideModal);
 
 function addValueToArray() {
@@ -20,6 +21,9 @@ function addValueToArray() {
     hideModal();
 }
 
+function RemoveValue(){
+ valueArray.pop(valueArray)
+}
 
 function displayModal() {
     if (!modalDisplay) {

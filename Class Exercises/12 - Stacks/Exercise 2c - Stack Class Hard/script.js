@@ -21,27 +21,27 @@ class Stack {
   // --- Push operation ---
   push(value) {
     // TODO: Fill in all the blanks to write the push algorithm
-    if (___________) {
-      return ___________;
+    if (this.size > this.LIMIT) {
+      return -1;
     } else {
-      var newNode = new Node(___________);
-      newNode.next = ___________;
-      this.top = ___________;
-      this.size = ___________;
-      return ___________;
+      var newNode = new Node(value);
+      newNode.next = this.top;
+      this.top = newNode;
+      this.size = this.size + 1;
+      return this.size;
     }
   }
 
   // --- Pop operation ---
   pop() {
     // TODO: Fill in all the blanks to write the pop algorithm
-    if (___________) {
-      return ___________;
+    if (this.size === 0) {
+      return -1;
     } else {
-      var popped = ___________;
-      this.top = ___________;
-      this.size = ___________;
-      return ___________;
+      var popped = this.top.value;
+      this.top = this.top.next;
+      this.size = this.size - 1;
+      return popped;
     }
   }
 

@@ -2,6 +2,8 @@
 document.getElementById('convertBtn').addEventListener('click', convertToCentimeters);
 
 function convertToCentimeters() {
+
+    
     // TODO:
     // 1. Get the feet and inches values from the input fields
     // 2. Convert to centimeters using:

@@ -21,14 +21,14 @@ class Stack {
   // --- Push operation ---
   push(value) {
     // TODO: Fill in the blanks to complete the push logic
-    if (___________) {
+    if (this.size > this.LIMIT) {
       // Stack is full
       return -1;
     } else {
-      var newNode = new Node(___________);
-      newNode.next = ___________;
-      this.top = ___________;
-      this.size = ___________;
+      var newNode = new Node(value);
+      newNode.next = this.top;
+      this.top = newNode;
+      this.size = this.size + 1;
       return this.size;
     }
   }
@@ -36,13 +36,13 @@ class Stack {
   // --- Pop operation ---
   pop() {
     // TODO: Fill in the blanks to complete the pop logic
-    if (___________) {
+    if (this.size === 0) {
       // Stack is empty
       return -1;
     } else {
-      var popped = ___________;
-      this.top = ___________;
-      this.size = ___________;
+      var popped = this.top.value;
+      this.top = this.top.next;
+      this.size = this.size - 1;
       return popped;
     }
   }

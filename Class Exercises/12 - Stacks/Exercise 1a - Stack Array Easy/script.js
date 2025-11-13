@@ -1,7 +1,7 @@
 // =============================
 // Stack implemented with an array (manual push/pop)
 // =============================
-
+document.addEventListener("DOMContentLoaded", function() {
 // --- Stack setup ---
 const STACK_LIMIT = 10; // Maximum stack size
 const stack = [];
@@ -15,7 +15,7 @@ function push(value) {
     return -1;
   } else {
     top = top + 1;
-    stack[top] = ___________;
+    stack[top] = value;
     return top;
   }
 }
@@ -28,7 +28,7 @@ function pop() {
     return -1;
   } else {
     var popped = stack[top];
-    stack[top] = ___________;
+    stack[top] = undefined;
     top = top - 1;
     return popped;
   }
@@ -105,5 +105,5 @@ document.getElementById("btnClear").onclick = function() {
   clear();
   updateOutput();
 };
-
+});
 updateOutput();
