@@ -2,6 +2,11 @@
 document.getElementById('calculateBtn').addEventListener('click', calculateHireCharge);
 
 function calculateHireCharge() {
+    let miles = parseFloat(document.getElementById('miles').value);
+   let mileageCharge = 0.05 * miles
+  let  totalCharge = 25.00 + mileageCharge 
+    document.getElementById('mileageCharge').innerText = mileageCharge.toFixed(2)
+    document.getElementById('totalCharge').innerText = totalCharge.toFixed(2)
     // TODO:
     // 1. Get the miles travelled from the input field
     // 2. Calculate:

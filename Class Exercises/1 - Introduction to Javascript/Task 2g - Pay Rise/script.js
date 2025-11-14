@@ -2,6 +2,8 @@
 document.getElementById('calculateBtn').addEventListener('click', calculatePayRise);
 
 function calculatePayRise() {
+
+    
     // TODO:
     // 1. Get the current salary, months back dated, and pay rise percentage
     // 2. Calculate:

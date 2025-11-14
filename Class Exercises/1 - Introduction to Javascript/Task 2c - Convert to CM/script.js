@@ -2,7 +2,11 @@
 document.getElementById('convertBtn').addEventListener('click', convertToCentimeters);
 
 function convertToCentimeters() {
+let feet = parseFloat(document.getElementById('feet').value);
+let inches = parseFloat(document.getElementById('inches').value);
 
+centimeters = ((feet * 12) + inches) * 2.54
+document.getElementById('centimeters').innerText = centimeters
     
     // TODO:
     // 1. Get the feet and inches values from the input fields
