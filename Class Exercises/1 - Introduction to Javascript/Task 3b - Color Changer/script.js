@@ -5,6 +5,10 @@ document.getElementById('boxBg').addEventListener('input', updateColors);
 document.getElementById('boxBorder').addEventListener('input', updateColors);
 
 function updateColors() {
+    let headingColor = document.getElementById('headingColor');
+    let paragraphBg = document.getElementById('paragraphBg');
+    let boxBg = document.getElementById('boxBg');
+    
     // TODO:
     // 1. Get all color input values
     // 2. Update the styles of each element:
