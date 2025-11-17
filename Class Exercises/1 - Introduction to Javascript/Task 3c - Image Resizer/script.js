@@ -5,6 +5,22 @@ document.getElementById('leftInput').addEventListener('input', updateImage);
 document.getElementById('topInput').addEventListener('input', updateImage);
 
 function updateImage() {
+    let widthInput = document.getElementById('widthInput').value;
+    let heightInput = document.getElementById('heightInput').value;
+    let leftInput = document.getElementById('leftInput').value;
+    let topInput = document.getElementById('topInput').value;
+
+    document.getElementById('previewImage').style.width = widthInput + 'px';
+    document.getElementById('previewImage').style.height = heightInput + 'px';
+    document.getElementById('previewImage').style.left = leftInput + 'px';
+    document.getElementById('previewImage').style.top = topInput + 'px';
+
+    document.getElementById('widthValue').textContent = widthInput;
+       document.getElementById('heightValue').textContent = heightInput;
+          document.getElementById('leftValue').textContent = leftInput;
+             document.getElementById('topValue').textContent = topInput;
+
+
     // TODO:
     // 1. Get all input values
     // 2. Update the image styles:

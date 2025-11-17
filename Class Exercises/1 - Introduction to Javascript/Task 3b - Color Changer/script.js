@@ -5,14 +5,23 @@ document.getElementById('boxBg').addEventListener('input', updateColors);
 document.getElementById('boxBorder').addEventListener('input', updateColors);
 
 function updateColors() {
-    let headingColor = document.getElementById('headingColorValue');
-    let paragraphBg = document.getElementById('paragraphBgValue');
-    let boxBg = document.getElementById('boxBgValue');
-    let boxBorder = document.getElementById('boxBorderValue');
-    document.getElementById('headingColor').style.color = headingColor
-    document.getElementById('paragraphBg').style.color = paragraphBg
-    document.getElementById('boxBg').style.backgroundColor = boxBg
-    document.getElementById('boxBorder').style.borderColor = boxBorder
+      let headingColor = document.getElementById('headingColor').value;
+      let paragraphBg = document.getElementById('paragraphBg').value;
+      let boxBg = document.getElementById('boxBg').value;
+      let boxBorder = document.getElementById('boxBorder').value;
+
+      document.getElementById('previewHeading').style.color = headingColor;
+      document.getElementById('previewParagraph').style.backgroundColor = paragraphBg;
+      document.getElementById('previewBox').style.backgroundColor = boxBg;
+      document.getElementById('previewBox').style.borderColor = boxBorder;
+
+      document.getElementById('headingColorValue').textContent = headingColor;
+      document.getElementById('paragraphBgValue').textContent = paragraphBg;
+      document.getElementById('boxBgValue').textContent = boxBg;
+      document.getElementById('boxBorderValue').textContent = boxBorder;    
+    
+
+
     // TODO:
     // 1. Get all color input values
     // 2. Update the styles of each element:
