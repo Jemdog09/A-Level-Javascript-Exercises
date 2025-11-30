@@ -20,6 +20,7 @@ btnDisplayArray.addEventListener('click', displayArray);
 btnAddValue.addEventListener('click', displayModal);
 overlay.addEventListener('click', hideModal);
 
+
 //code to display and hide modal
 function displayModal() {
     if (!modalDisplay) {
@@ -46,11 +47,17 @@ END TEMPLATE CODE
 //function to add a value to the array
 function addValueToArray() {
     let valueToAdd = document.getElementById('valueToAdd').value;
+    valueArray.push(valueToAdd)
     //add code to add a value to the array
     hideModal();
 }
 
 function displayArray() {
     //add code to display items in array
+    output.innerText = valueArray
 }
+
+btnRemoveValue.addEventListener('click', function(){
+valueArray.pop()
+})
 

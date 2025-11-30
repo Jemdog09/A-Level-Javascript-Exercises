@@ -9,6 +9,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Function to check if a number is positive, negative, or zero
 function checkNumber() {
+    let number = parseInt(document.getElementById('number').value);
+
+    if (number > 0) {
+        document.getElementById('result').innerText = 'POSITIVE'
+    } else if (number < 0){
+        document.getElementById('result').innerText = 'NEGATIVE'
+    } else {
+        document.getElementById('result').innerText = 'ZERO'
+    }
     // TODO: Get the number from the input field
     
     // TODO: Check if the number is positive, negative, or zero

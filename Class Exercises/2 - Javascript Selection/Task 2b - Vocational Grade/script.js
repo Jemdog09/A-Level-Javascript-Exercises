@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Function to calculate the Hang Gliding Certificate grade
 function calculateGrade() {
+    let theory = parseInt(document.getElementById('theory').value);
+    let practical = parseInt(document.getElementById('practical').value);
+     
     // TODO: Get the theory and practical exam scores
     
     // TODO: Check if both scores are above 50% (Pass requirement)
