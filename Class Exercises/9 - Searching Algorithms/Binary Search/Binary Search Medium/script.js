@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function studentSearch(array, target) {
         let left = 0;
-        let right = ___________;
+        let right = array.length - 1;
     
-        while (___________) {
+        while (__________) {
             let mid = ____________________;
             if (____________________) {
                 return mid;
