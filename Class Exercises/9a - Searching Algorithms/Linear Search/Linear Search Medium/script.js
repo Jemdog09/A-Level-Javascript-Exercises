@@ -33,15 +33,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function studentSearch(array, target) {
         let foundIndex = -1;
-        let currentIndex = ___;
-        while (_____________ && ______________) {
-            if (_______________) {
-                foundIndex = _____;
+        let currentIndex = 0;
+        while (currentIndex < array.length && foundIndex == - 1) {
+            if (currentIndex === target) {
+                foundIndex = currentIndex;
             } else {
-                ______________;
+                currentIndex++;
             }
         }
-        return _____;
+        return foundIndex;
     }
     
     

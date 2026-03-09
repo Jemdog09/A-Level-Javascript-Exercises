@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let foundIndex = -1;
         let currentIndex = 0;
         while (currentIndex < array.length && foundIndex == -1) {
-            if (array[index] === target) {
+            if (array[currentIndex] === target) {
                 foundIndex = currentIndex
             } else {
                 currentIndex++;
