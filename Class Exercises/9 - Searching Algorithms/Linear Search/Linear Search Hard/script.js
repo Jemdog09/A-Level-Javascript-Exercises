@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function studentSearch(array, target) {
         let __________________ = -1;
-        let __________________;
+        let ____________________;
         while (____________________) {
             if (__________________) {
                 _______________;
